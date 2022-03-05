@@ -17,16 +17,16 @@ end
 
 t = Ticket.new
 t.venue = "Guangzhou"
-puts t.get_venue
+puts t.get_venue # Guangzhou
 
 v = t.get_venue
 v.replace("Guilin")
-puts v
-puts t.get_venue
+puts v # Guilin
+puts t.get_venue # Guilin
 
 t.event = "123456789"
-puts t.event
+puts t.event # error
 e = t.event
 e.replace("123456789")
-puts e
-puts t.event
+puts e # 123456789
+puts t.event # 123456789

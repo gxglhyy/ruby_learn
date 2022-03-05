@@ -1,0 +1,9 @@
+[[layers]]
+  name = "lang#ruby"
+[[layers]]
+  name = "lsp"
+  filetypes = [
+    "ruby"
+  ]
+  [layers.override_cmd]
+    ruby = ["solargraph", "stdio"]
